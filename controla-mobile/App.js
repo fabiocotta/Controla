@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import Home from './src/screens/home/home';
+import icons from './src/constants/icons';
 
-export default function App() {
+
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Seja Bemd-Vindo ao APP - Fc.Design</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Home/>
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
